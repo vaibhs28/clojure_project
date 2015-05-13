@@ -20,4 +20,4 @@
   ([filename]
  (generate-string {:data (map #(split % #",") (read_file filename )) })))
  
- (read_file_as_json "E:\\V\\Workspace\\clojure_project\\resources\\actors.csv")
+ (read_csv_file_as_json (.getFile (clojure.java.io/resource "actors.csv")))
